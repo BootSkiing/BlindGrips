@@ -1,0 +1,106 @@
+\NeedsTeXFormat{LaTeX2e}    % I don't know anything about versions; this could probably be changed
+\ProvidesPackage{blindgrips}[v0, YUH!]
+
+\RequirePackage{ifthen}
+
+%%% COMMANDS %%%
+
+% \blindgrips: Short sentences and text snippets
+\newcommand{\blindgrips}[1]{
+
+    % I Break Mirrors With My Face In The United States
+    \ifthenelse{\equal{#1}{1}}{
+        I break mirrors with my face in the United States.
+        I break mirrors with my face in the United States.
+        I break mirrors with my face in the United States.
+        I break mirrors with my face in the United States.
+    }{}
+    
+    % Trash
+    \ifthenelse{\equal{#1}{1}}{
+        We know trash, we know clean don’t last.
+        Never last when we load trash.
+        We upload trash.
+        Face down, trash begets trash.
+    }{}
+}
+
+% \Blindgrips: Longer, paragraph sized, text blocks
+\newcommand{\Blindgrips}[1]{
+
+        % Spread Eagle Across the Block
+        \ifthenelse{\equal{#1}{1}}{
+            I fuck the music,
+            I make it cum.
+            I fuck the music with my serpent tongue.
+            Wanna beer, have no fear, comes and goes, man its here.
+            No one knows, feels so weird, when it blows through my bones
+            I got a jones for it.
+            I wanna know more, cuz its bout what I got to show for it.
+            I want some more of it;
+            I want too much.
+            I got so bored with it;
+            I shot it up.
+            Wanna light my torch with it and get all fucked up.
+            What is it, where is it,
+            how will it affect me?
+            Fuck that shit, I need that shits bound to be the death of me.
+            Fuck buying it I'm taking it, and sharing it with nobody.
+            Cuz all I really need is some cool shit to mob,
+            like driving down the street to the beat of a blow job.
+        }{}
+        
+        % Beware
+        \ifthenelse{\equal{#1}{2}}{
+            He come to me with money in his hand. He offered me, I didn't ask him I wasn't knocking someone's door down, I was
+            running from that. When I got out, I was in that. I was already through that, I had that I had the studio, I went to
+            the studio. I went to Vox Studios. I had it all, and I looked at it and said, "This is a bigger jail than I just got
+            out of." I don't want to take my time going to work. I got a motorcycle and a sleeping bag and ten or fifteen girls.
+            What the hell I wanna go off into -- and go to work for? Work for what, money? I got all the money in the world. I'm
+            the king, man. I run the underworld, guy. I decide who does what and where they do it at. What am I, gonna run around
+            and act like I'm some teenybopper somewhere, for somebody else's money? I make the money, man. I roll the nickels.The
+            game is mine. I deal the cards.
+        }{}
+        
+        % You Might Think He Loves You for Your Money but I Know What He Really Loves You for It's Your Brand New Leopard Skin Pillbox Hat
+        \ifthenelse{\equal{#1}{3}}{
+            i hover above you.
+            life pulled out your mouth.
+            i become you.
+            opening of the mouth.
+            unlawful possession.
+            jellyfish in cold sweat deep end.
+            hollow shell twitch disconnection.
+            pupils swell.
+            my entrance.
+            hijacked no questions asked.
+            stretch you on like latex mask.
+            my sigils your epitaph.
+        }{}
+}
+
+% \gripslist: Enumerated list of items
+\newcommand{\gripslist}[1]{
+
+        % I Want it I need it (Death Heated)
+        \ifthenelse{\equal{#1}{2}}{
+            \begin{enumerate}
+                \item Money
+                \item Drugs
+                \item A Ride
+                \item Hot Ones Inside
+            \end{enumerate}
+        }{}
+        
+        % I Want it I need it (Death Heated)
+        \ifthenelse{\equal{#1}{2}}{
+            \begin{enumerate}
+                \item Acid on the tongue
+                \item Cocaine in your brain
+                \item Weed that hits your lungs like a runaway train
+                \item From DMT...
+                \item ... to MDMA
+                \item Got all this shit and more so till dawn we're okay, but anyway...
+            \end{enumerate}
+        }{}
+}
